@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tardismodreborn",
+	"version": "${version}",
+	"name": "TardisModReborn",
+	"description": "A Doctor Who based mod series, this mod adds the Tardis.",
+	"authors": [
+		"TMRTeam"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/tardismodreborn/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"tmrteam.tmr.TardisModReborn"
+		],
+		"client": [
+			"tmrteam.tmr.TardisModRebornClient"
+		],
+		"fabric-datagen": [
+			"tmrteam.tmr.TardisModRebornDataGenerator"
+		]
+	},
+	"mixins": [
+		"tardismodreborn.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
